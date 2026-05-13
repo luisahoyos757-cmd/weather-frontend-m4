@@ -1,0 +1,17 @@
+@use "../abstracts/mixins" as * ;
+@use "../abstracts/variables" as * ;
+
+.place-card {
+  @include card-style;
+  
+}
+
+.place-card__title {
+  margin-bottom: 20px;
+}
+
+.place.card-container {
+  height: 100%;
+  display: flex;
+}
+

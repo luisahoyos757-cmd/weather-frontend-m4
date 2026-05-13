@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+
+.weather-app__header {
+  min-height: 220px;
+  padding: $space-xs;
+}
+
+.weather-app__header h1 {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+}
+
+.weather-app__header p {
+    font-size: $font-size-md;
+}

@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as * ;
+
+.weather-app__hero {
+  margin-bottom: $spacing-md;
+}
+
+.weather-app__image {
+  border-radius: $radius3;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.place-card {
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: $radius3;
+}
+
+.place-card__title {
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+}
+
+.place-card__temp {
+  font-size: $font-size-sm;
+}

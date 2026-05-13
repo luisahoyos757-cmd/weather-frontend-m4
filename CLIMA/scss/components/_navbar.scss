@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as * ;
+
+.weather-app__header { 
+  background-color: $color1;
+  font-size: $font-size-lg;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-style: oblique;
+}
+
+.weather-app__main {
+  background: $color3;
+}
+
+.boton-primario {
+  border-radius: $radius3;
+}

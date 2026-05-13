@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as * ;
+
+.weather-app__footer {
+  padding: $space-md;
+  text-align: center;
+}
