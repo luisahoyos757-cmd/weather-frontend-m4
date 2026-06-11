@@ -1,72 +1,37 @@
 # App de Clima
 
-Aplicación web de clima desarrollada con HTML5, Bootstrap,SASS y JavaScript.
+## Descripción
 
-La aplicación muestra distintas ciudades mediante cards con información climática y permite visualizar detalles de cada lugar.
+Aplicación web desarrollada con HTML, CSS, Bootstrap y JavaScript que permite consultar información climática de distintas ciudades utilizando la API Open-Meteo.
 
-## Funcionalidades
-- Visualización de ciudades mediante cards
-- Detalle dinámico del clima
-- Navegación entre secciones
-- Scroll automático hacia detalle
-- Diseño responsivo
-- Uso de DOM con JavaScript
-- Organización con metodología BEM 
+La aplicación muestra el clima actual, el pronóstico semanal, estadísticas automáticas y alertas climáticas para cada ciudad seleccionada.
 
-## Tecnologías utilizadas
+## Estructura de clases
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript
+La aplicación utiliza Programación Orientada a Objetos mediante las siguientes clases:
 
-## Modelado de datos
+### ApiClima
 
-Los datos del clima están almacenados en un arreglo de objetos llamado `lugares`.
+Se encarga de realizar las consultas a la API Open-Meteo y obtener la información climática de cada ciudad.
 
-Cada ciudad contiene:
-- id
-- nombre
-- temperatura actual
-- estado del clima
-- humedad
-- viento
-- sensación térmica
-- pronóstico semanal
+### WeatherApp
 
-El pronóstico semanal contiene:
-- día
-- temperatura mínima
-- temperatura máxima
-- estado del clima
+Se encarga de administrar la lógica principal de la aplicación, procesar los datos recibidos, calcular estadísticas, generar alertas y actualizar dinámicamente la interfaz de usuario.
 
-## Funcionalidades
+## API utilizada
 
-La aplicación permite:
-- visualizar ciudades disponibles
-- ver el detalle del clima de cada ciudad
-- mostrar el pronóstico semanal
-- calcular estadísticas de temperatura
-- contar tipos de clima
-- generar un resumen automático del clima semanal
+**Nombre:** Open-Meteo
 
-## Estadísticas calculadas
+**Sitio web:** https://open-meteo.com/
 
-Mediante JavaScript se calculan:
-- temperatura mínima
-- temperatura máxima
-- temperatura promedio
-- cantidad de días soleados
-- cantidad de días nublados
-- cantidad de días lluviosos
-- cantidad de días ventosos
+La API Open-Meteo proporciona información meteorológica actual y pronósticos climáticos mediante coordenadas geográficas. En este proyecto se utiliza para obtener temperatura actual, humedad, sensación térmica, velocidad del viento, estado del clima y pronóstico semanal.
 
-## GitHub
+## Cálculo de estadísticas
 
-Repositorio público del proyecto:
+Las estadísticas se generan automáticamente a partir del pronóstico semanal obtenido desde la API Open-Meteo.
 
 -https://github.com/luisahoyos757-cmd/weather-frontend-m4.git
 
-## Autor
+Con estos datos la aplicación también genera un resumen automático del comportamiento climático semanal y alertas según las condiciones detectadas.
 
 -Luisa Hoyos 

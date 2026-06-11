@@ -24,12 +24,9 @@
     </div>
   </nav>
 
-  <section class="weather-app__hero">
-    <img src="assets/img/clima.jpg" alt="Imagen clima" class="weather-app__image img-fluid d-block mx-auto">
-  </section>
-
   <main class="weather-app__main container my-4">
     <section id="pronostico">
+      <div id="mensaje-app" class="text-center mt-3"></div>
       <h2 id="ciudades" class="text-center mb-4">Ciudades</h2>
       <p class="text-center mb-4">Selecciona una ciudad para ver su pronóstico semanal y estadísticas del clima.</p>
       <div id="lista-lugares" class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4"></div>
@@ -50,6 +47,10 @@
 
       <h4 class="text-center mt-4">Estadísticas de la semana</h4>
       <div id="estadisticas-semana" class="mt-3"></div>
+
+      <h4 class="text-center mt-4">Alertas de clima</h4>
+      <div id="alertas-clima" class="mt-3"></div>
+
     </div>
   </section>
 
